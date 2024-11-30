@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <strong>Primeira Página!</strong>
+    <script>
+      // Estrutura de condição
+
+      // let idade = 18;
+
+      // if(idade >= 18){
+      //     console.log('Maior de idade');
+      // }else{
+      //     console.log('Menor de idade');
+
+      // }if(idade > 4 && idade <= 14){
+      //     console.log('Criança')
+      // }else if(idade > 14 && idade < 18){
+      //     console.log('Adolescente')
+      // }else if(idade >= 18 && idade < 60){
+      //     console.log('Adulto')
+      // }else{
+      //     console.log('Idoso')
+      // }
+
+      // let comerLactose = false;
+      // let ficarDoente;
+
+      // if(comerLactose === true){
+      //     ficarDoente = true;
+      // }else{
+      //     ficarDoente = false;
+      // }
+
+      // console.log(ficarDoente);
+
+      let idade = 5;
+
+      if (idade > 4 && idade < 12) {
+        console.log("Criança");
+      } else if (idade >= 12 && idade < 18) {
+        console.log("Adolescente");
+      } else if (idade >= 18 && idade < 60) {
+        console.log("Adulto");
+      } else {
+        console.log("Idoso");
+      }
+
+      switch (idade) {
+        case 1:
+        case 2:
+        case 3:
+        case 4:
+        case 5:
+        case 6:
+        case 7:
+          console.log("Não pode entrar na festa");
+          break;
+        case 12:
+        case 13:
+        case 14:
+        case 15:
+        case 16:
+        case 17:
+          console.log("Não pode entrar na festa");
+          break;
+        default:
+          console.log("Pode entrar na festa");
+          break;
+      }
+
+      // Estrutura de Repetição
+
+      for (let i = 0; i <= 10; i++) console.log(i);
+
+      let num1 = 10;
+
+      while (num1 <= 11) {
+        console.log(num1);
+        num1++;
+      }
+
+      //Funções
+
+      function somar(numero1, numero2) {
+        return numero1 + numero2;
+      }
+
+      let resultado = somar(20, 5);
+      console.log(resultado);
+    </script>
+    <script></script>
+  </body>
+</html>
