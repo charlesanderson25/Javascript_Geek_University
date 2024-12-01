@@ -10,3 +10,7 @@ body {
 .block {
   color: green;
 }
+
+#lista {
+  text-decoration: underline;
+}
