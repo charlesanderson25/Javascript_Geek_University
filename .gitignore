@@ -1,0 +1,10 @@
+# Ignorar arquivos temporários
+*.tmp
+*.log
+
+# Ignorar diretório node_modules
+node_modules/
+
+# Ignorar arquivos de configuração locais
+.env
+.vscode/
