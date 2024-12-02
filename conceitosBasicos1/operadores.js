@@ -50,3 +50,21 @@ diferente e de outro tipo que !==
 */
 
 // Operador Unário e Ternário
+
+// Unário
+
+let idade = 37;
+idade++; // operação unária
+console.log(idade);
+
+// Ternário
+
+let sexo = "m";
+
+if (sexo === "m") {
+  console.log("Masculino");
+} else {
+  console.log("Feminino");
+}
+
+console.log(sexo === "m" ? "Masculino" : "Feminino"); // operador ternário
