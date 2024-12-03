@@ -37,4 +37,62 @@ nomes.sort(); // método apenas para strings
 
 console.log(`O array ordenado é: ${nomes}`);
 
-// parei no minuto 36 da aula
+// Ordenação array de inteiros / float
+
+let intFloats = [94, 537, 25.4, 2, 93, 257];
+
+intFloats.sort((a, b) => a - b); // ordenação utilizando arrow function
+
+console.log("-=".repeat(35));
+
+console.log(`Resultado do array de números ordenados ${intFloats}`);
+
+let intFloats1 = [94, 537, 25.4, 2, 93, 257, 999];
+
+intFloats1.sort(function (a, b) {
+  return a - b;
+}); // utilizando função regular
+
+console.log("-=".repeat(35));
+
+console.log(
+  `Array de números ordenado, utilizando função regular ${intFloats1}`
+);
+
+// Excluir um elemento do array
+
+console.log("-=".repeat(35));
+
+delete intFloats1[0]; // exclui elemento sem alterar o tamanho do array
+
+console.log(`Array após exclusão do índice zero ${intFloats1}`);
+
+console.log(`Índice zero após exclusão com delete ${intFloats1[0]}`);
+
+// Excluir um elemento do array alterando seu tamanho
+
+console.log("-=".repeat(35));
+
+intFloats1.splice(0, 1); // método com dois parâmetros, splice(índice_do_array, quantidade_de_itens_excluídos)
+
+console.log(
+  `Exclusão do índice zero utilizando método splice, o elemento de índice [1] vai para o índice [0] ${intFloats1[0]}`
+);
+
+console.log(`Novo array após exclusão com splice ${intFloats1}`);
+
+// Adicionando elemento no array na última posição
+
+intFloats1.push(666);
+
+console.log(`Novo array com elemento adicionado ${intFloats1}`);
+
+// adicionando elemento no array utilizando o splice()
+
+intFloats1.splice(0, 0, 777);
+
+console.log(
+  `A partir da posição zero, não exclua elementos e adicione o número 777: ${intFloats1}`
+);
+
+// parei no minuto 52
