@@ -1,4 +1,5 @@
 // Método foreach - Método moderno para substituir o For
+// O forEach não gera um novo array
 
 let linguagens = ["Javascript", "Java", "Python", "C#", "C++", "C", "PHP"];
 
