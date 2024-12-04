@@ -95,4 +95,48 @@ console.log(
   `A partir da posição zero, não exclua elementos e adicione o número 777: ${intFloats1}`
 );
 
-// parei no minuto 52
+// Iterar arrays
+
+for (let i = 0; i <= intFloats1.length; i++) {
+  console.log(`Resultado da iteração do array: ${intFloats1[i]}`);
+}
+
+// removendo último elemento de um array
+
+intFloats1.pop();
+
+console.log(
+  `Array após uso do método pop(), undefined era o último elemento ${intFloats1}`
+);
+
+// método slice, retorna um novo array a partir do índice informado como parâmetro
+
+let intFloats2 = intFloats1.slice(1);
+console.log(`Novo array a partir do índice [1] ${intFloats2}`);
+
+// método concat
+
+let x = ["x", "xx", "xxx"];
+let y = ["y", "yy", "yyy"];
+
+let xy = x.concat(y);
+console.log(xy);
+
+// ordenar
+
+xy.sort(function (a, b) {
+  return a - b;
+});
+console.log(xy);
+
+// Array de array´s ou matrizes com colunas e linhas
+
+let tabuleiro = [
+  [1, 2, 3, 4], // linha 0
+  [5, 6, 7, 8], // linha 1
+  [10, 11, 12, 13], // linha 2
+  [14, 15, 16, 17], // linha 3
+];
+
+console.log(tabuleiro[3][2]); // impressão do número 16, onde o primeiro índice refere-se à linha e o segundo índice refere-se à coluna
+console.log(tabuleiro[0][3]); // impressão do número 4
