@@ -1,5 +1,7 @@
 // Funções
 
+const PromptSync = require("prompt-sync");
+
 function array() {
   const arrayGerado = Array.from({ length: 20 }, () =>
     Math.floor(Math.random() * 100)
@@ -75,3 +77,29 @@ for (let i = 0; i < valores1.length; i++) {
     `Tipos de dados de cada elemento do array valores1: ${typeof valores1[i]}`
   );
 }
+
+console.log("-=".repeat(40));
+
+//////////////////////////////////////// Função para Calcular a Idade ////////////////////////////////////////
+
+const prompt = require("prompt-sync")();
+
+function calculaIdade() {
+  let dataAtual = new Date();
+
+  console.log(`Tipo de dado de dataAtual: ${dataAtual}`);
+
+  let anoNascimento = parseInt(
+    prompt("Informe o ano do seu nascimento com 4 dígitos: ")
+  );
+
+  console.log(`Tipo de dado anoNascimento: ${typeof anoNascimento}`);
+
+  idade = dataAtual.getFullYear() - anoNascimento;
+  console.log(`Tipo de dado de idade: ${typeof idade}`);
+
+  console.log(`Sua idade é de ${idade} anos.`);
+  return idade;
+}
+
+calculaIdade();
